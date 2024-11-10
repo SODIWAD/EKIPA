@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia Przyjaciół</title>
+    <style>
+        /* Stylowanie tła strony */
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #ffb6c1, #ffe4e1);
+            color: #333;
+        }
+        /* Główne opakowanie strony */
+        .container {
+            width: 100%;
+            max-width: 800px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        /* Styl nagłówków */
+        h1 {
+            color: #ff69b4;
+        }
+        h2 {
+            color: #ff1493;
+        }
+        /* Styl dla zdjęć */
+        .photo {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            border-radius: 10px;
+            margin: 15px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        /* Sekcja tekstu */
+        .story {
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin: 20px 0;
+        }
+        /* Przyciski */
+        .button {
+            padding: 10px 20px;
+            margin-top: 15px;
+            font-size: 1em;
+            color: #fff;
+            background-color: #ff69b4;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #4b0b07fa;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Strona poświęcona historii bandy jebanych debili</h1>
+    <p class="story">
+        Nie wiem dlaczego oni, są to jebani mistrzowie manipulacji, Upijania i Żydzenia. 
+        Miłego Oglądania
+    </p>
+    <!-- Pierwsze zdjęcie przyjaciół -->
+    <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/413824749_790533459550560_7807882867485955849_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=0024fc&_nc_ohc=H7AcsGdCU_kQ7kNvgExxt1q&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1QH1mBD-my3cyO8DrorXh3EaV3sCGz7cLsdXyXd6LdmCvA&oe=67584EDA" alt="STARE ZDJĘCIA" class="photo">
+
+    <!-- Opis pierwszej przygody -->
+    <h2>Początek Przyjaźni</h2>
+    <p class="story">
+        Wszystko zaczęło się lata temu, kiedy grupa przypadkowych osób spotkała się na letnim obozie. Wspólne żarty, ogniska i nocne rozmowy połączyły ich na zawsze.
+    </p>
+
+    <!-- Drugie zdjęcie przyjaciół -->
+    <img src="przyjaciele2.jpg" alt="Przyjaciele na wyprawie" class="photo">
+
+    <!-- Opis kolejnej przygody -->
+    <h2>Wspólne Wyprawy</h2>
+    <p class="story">
+        Razem wyruszyli w góry, gdzie śmiali się do rozpuku, przekraczali swoje granice i cieszyli się widokiem pięknych krajobrazów. Każdy z tych momentów wzmocnił ich więź.
+    </p>
+
+    <!-- Przycisk z nową historią -->
+    <button class="button" onclick="showMoreStory()">Poznaj kolejne wspomnienia</button>
+
+    <!-- Sekcja, która wyświetli dodatkowe historie -->
+    <div id="more-story" class="story" style="display: none;">
+        <h2>Razem w Radości i Smutkach</h2>
+        <p>
+            Życie nie zawsze było proste, ale mieli siebie. W chwilach trudnych mogli liczyć na wzajemne wsparcie, a w momentach szczęścia – na prawdziwą radość z sukcesów każdego z nich.
+        </p>
+        <img src="przyjaciele3.jpg" alt="Przyjaciele świętują razem" class="photo">
+        <p>
+            Przeżyli razem mnóstwo niesamowitych przygód, tworząc wspomnienia, które przetrwają całe życie. Nieważne, co ich czeka, wiedzą, że zawsze mogą liczyć na siebie.
+        </p>
+    </div>
+</div>
+
+<script>
+    // Funkcja pokazująca dodatkowe wspomnienia
+    function showMoreStory() {
+        document.getElementById('more-story').style.display = 'block';
+    }
+</script>
+
+</body>
+</html>
